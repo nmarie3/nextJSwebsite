@@ -1,13 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-import Section from '../components/Section'
-import Container from '../components/Container'
+import Section from '../../../global_components/Section'
+import Container from '../../../global_components/Container'
 import SNSLink from '../components/SNSLink'
 
 const About = () => {
   return (
 
-    <Section className="bg-neutral-950 text-white">
+    <Section id="about" className="bg-neutral-950 text-white">
         {/*<div className="container mx-auto px-4"></div>*/}
         <Container className="lg:max-w-6xl">
             <h2 className="text-center text-green-500 mb-8 md:mb-12">About Me</h2>
@@ -18,9 +18,9 @@ const About = () => {
                     <Image 
                         src="/images/about.jpg" 
                         alt="about" 
-                        layout="responsive" 
+                        sizes="100vw" 
                         width={0} height={0} 
-                        className="rounded-lg relative z-10 border-8 border-white"/>
+                        className="h-auto w-full rounded-lg relative z-10 border-8 border-white"/>
                 </div>
                 <div>
                     <h4 className="mb-4">What I do for a living</h4>

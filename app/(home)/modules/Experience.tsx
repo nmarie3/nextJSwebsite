@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import Container from '../components/Container'
-import Section from '../components/Section'
+import Container from '../../../global_components/Container'
+import Section from '../../../global_components/Section'
 
 const Experience = () => {
     const experiences = [
@@ -37,7 +37,7 @@ const Experience = () => {
 
 
   return (
-    <Section className="bg-neutral-950">
+    <Section id="experience" className="bg-neutral-950">
         <Container className="lg:max-w-6x1">
             <div className="mb-8 text-center text-white">
                 <h2 className="text-green-500 mb-4">Experiences</h2>
@@ -51,9 +51,9 @@ const Experience = () => {
                         <Image 
                             src={exp.image} 
                             alt="experience" 
-                            layout="responsive" 
+                            sizes= "100vw" 
                             width={0} height={0} 
-                            className="rounded max-h-32"/>
+                            className="h-auto w-full rounded max-h-32"/>
                     </div>
                     <div>
                         <h4 className="mb-4">{exp.title}</h4>

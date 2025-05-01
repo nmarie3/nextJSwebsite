@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 import SNSLink from '../components/SNSLink'
-import Section from '../components/Section'
-import Container from '../components/Container'
+import Section from '../../../global_components/Section'
+import Container from '../../../global_components/Container'
 
 
 const Hero = () => {
@@ -47,10 +47,9 @@ const Hero = () => {
                     <Image 
                         src="/images/noriko.jpg" 
                         alt="hero" 
-                        // sizes="100vw" 
-                        layout="responsive"
+                        sizes="100vw" 
                         width={0} height={0}
-                        className="rounded-lg"
+                        className="h-auto w-full rounded-lg"
                         priority
                         />
 

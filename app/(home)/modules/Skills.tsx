@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import Section from '../components/Section'
-import Container from '../components/Container'
+import Section from '../../../global_components/Section'
+import Container from '../../../global_components/Container'
 
 const Skills = () => {
     const skills = [
@@ -28,7 +28,7 @@ const Skills = () => {
     ]
 
   return (
-    <Section>
+    <Section id="skills">
         <Container className="lg:max-w-6xl">
             <h2 className="mb-8 md:mb-12 text-center text-green-500">Skills</h2>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-8">
